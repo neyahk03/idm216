@@ -1,9 +1,36 @@
+@font-face {
+    font-family: 'gomepixel-regular';
+    src:url('../fonts/gomepixel-regular-webfont.woff') format('woff'),
+    url('../fonts/gomepixel-regular-webfont.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'gomepixel-rounded';
+    src:url('../fonts/gomepixel-rounded-webfont.woff') format('woff'),
+    url('../fonts/gomepixel-rounded-webfont.woff2') format('woff2');
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
     margin: 0;
+    
+    --dark-blue: #015582;
+    --light-blue: #C9DEEA;
+    --dark-yellow: #FFBD5C;
+    --light-yellow: #FFD598;
+    --red: #A63B33;
+
+    --background-color: var(var(--red));
+
+    --main-font: 'gomepixel-regular';
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--main-font);
 }
 
 h1 {
